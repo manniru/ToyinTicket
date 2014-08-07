@@ -1,0 +1,37 @@
+<div data-role="view" id="cardsView" data-title="Cards" data-init="listViewCardsInit" data-model="cardsViewModel">
+	<header data-role="header">
+		<div data-role="navbar">
+            <a id="buttonAddNewCard" data-role="button" href="views/addCardView.html" 
+                 data-align="right" data-icon="add"></a>
+            <span data-role="view-title"></span>
+		</div>
+	</header>
+    <div id="cardsViewContent" data-role="content">
+		<!-- List of cards -->
+        <ul class="cardListWrapper" data-role="listview" data-style="inset" data-type="group">
+            <li>
+                <ul id="cardsList" data-role="listview" data-bind="source: cards" data-template="cardsListTemplate">
+                </ul>
+            </li>
+        </ul>
+	</div>
+</div>
+        
+<script type="text/x-kendo-template" id="cardsListTemplate">
+    <a class="listCard clear" data-cardId="#:cardNumber#" data-role="listview-link" 
+        href='views/singleCardView.html?bonusPoints=#:bonusPoints#&cardNumber=#:cardNumber#&cardAmount=#:amount#'>
+        <div 
+    #if(bonusPoints<50){#
+        class="silverCardImage cardPicture"
+    #}else{#
+        class="goldCardImage cardPicture"
+        #}
+    #></div>
+        <div class="cardInformationContainer">
+            <span>Card Number: </span>
+            <span class="cardNumberText">#:cardNumber#</span>
+            <div class="expireDateText">Expire on #:expireDate#</div>
+        </div>
+        <div class="clear"></div>
+    </a>
+</script>

@@ -1,0 +1,45 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.toyin</groupId>
+  <artifactId>ToyinTicket</artifactId>
+  <packaging>war</packaging>
+  <version>1</version>
+  <name>phonegap Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+  <build>
+    <finalName>ToyinTicket</finalName>
+    <plugins>
+	<plugin>
+	    <groupId>com.github.chrisprice</groupId>
+	    <artifactId>phonegap-build-maven-plugin</artifactId>
+	    <version>0.0.2</version>
+	    <executions>
+		<execution>
+		    <id>phonegap-build</id>
+		    <!-- the goals are lifecycle bound by default -->
+		    <goals>
+			<goal>clean</goal>
+			<goal>build</goal>
+		    </goals>
+		    <configuration>
+			<platforms>
+			    <platform>android</platform>
+			</platforms>
+		    </configuration>
+		</execution>
+	    </executions>
+	    <configuration><appId>1038568</appId></configuration>
+	</plugin>
+</plugins>
+    
+  </build>
+</project>

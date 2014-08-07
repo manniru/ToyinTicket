@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0"
+        id="com.mannir.app.phonegap" version="1.0.0">
+    <name>ToyinTicket</name>
+    <description>Film Ticket Booking System For Mobile Device Software</description>
+    <author href="" >Muniru Toyin</author>
+</widget>
