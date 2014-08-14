@@ -163,6 +163,10 @@
             addCardViewModel.resetView();
 		},
         
+		RegisterShow: function () {
+            addCardViewModel.resetView();
+		},
+        
             
 		rewardCardShow: function(e) {
 			var bonusPoints = e.view.params.bonusPoints,
@@ -246,6 +250,7 @@
 		singleCardShow: _app.singleCardShow,
 		singleCardInit: _app.singleCardInit,
 		onAddCardViewShow: _app.onAddCardViewShow,
+		RegisterShow: _app.RegisterShow,
 		announcementData: _app.announcementData,
 		onStoresShow: _app.storesShow,
 		storesInit: _app.storesInit

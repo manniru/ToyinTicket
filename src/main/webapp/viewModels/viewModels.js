@@ -39,6 +39,18 @@
                 
 			app.navigate("views/cardsView.html");	
 		},
+		
+		Register: function() {
+			alert("hi");
+			var that = this,
+    			cardNumberValue = $('#cardNumberField').val(),
+    			newCard = that._generateRandomCard(cardNumberValue),
+                positionAdded = cardsViewModel.cards.push(newCard) - 1;
+			
+			cardsViewModel.cardNumbers()[cardNumberValue] = positionAdded;
+                
+			app.navigate("views/cardsView.html");	
+		},
 
 		cardIdChanged: function(e) {
 

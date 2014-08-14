@@ -29,12 +29,11 @@ var AppData = function() {
 	];
     
 	_announcements = [
-		{ title: "New Account Registraton", description: "Enjoy your favorite holiday drinks, like Pumpkin Spice Lattes.", url: "images/holiday.png" },
-		{ title: "Register & Get Free Drinks", description: "Register any Jitterz card and start earning rewards like free drinks. Sign-up now.", url: "images/rewards.png" },
-		{ title: "Cheers to Another Year", description: "Raise a cup of bold and spicy Jitterz Anniversary Blend.", url: "images/cheers.png" },
-		{ title: "Hot Drinks Anytime", description: "Find and enjoy our, hot drinks anytime.", url: "images/hot-drink.png" },
-		{ title: "Friend and Love", description: "Get more for your friends.Get Love.", url: "images/love-friend.png" },
-		{ title: "Wide range of choice", description: "Raise a cup of bold and spicy Jitterz Anniversary Blend.", url: "images/best-coffee.png" }
+		{ title: "Spider Man 2", description: "Enjoy your favorite holiday drinks, like Pumpkin Spice Lattes.", url: "images/spiderman2.png" },
+		{ title: "Robocop 2014" , url: "images/robocop.png", description: "In 2028 Detroit, when Alex Murphy - a loving husband, father and good cop - is critically injured in the line of duty, the multinational conglomerate OmniCorp sees their chance for a part-man, part-robot police officer."},
+		{ title: "Divergent", url: "images/divergent.png", description: "In a world divided by factions based on virtues, Tris learns she's Divergent and won't fit in. When she discovers a plot to destroy Divergents, Tris and the mysterious Four must find out what makes Divergents dangerous before it's too late."},
+		{ title: "Harry Potter", url: "images/harrypotter.png", description: "Harry Potter is a series of seven epic fantasy novels written by the British author J. K. Rowling. The series, named after the titular character, chronicles the adventures of a young wizard, Harry"},
+		{ title: "Hobbit", url: "images/hobbit.png", description: "THE HOBBIT: THE BATTLE OF THE FIVE ARMIES - brings to an epic conclusion the adventures of Bilbo Baggins"},
 	];
     
 	_private = {
