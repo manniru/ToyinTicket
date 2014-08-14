@@ -41,7 +41,12 @@
 		},
 		
 		Register: function() {
-			alert("hi");
+			username = $('#username').val();
+			password = $('#password').val();
+			fullname = $('#fullname').val();
+			mobileno = $('#mobileno').val();
+			username = $('#username').val();
+			alert(username);
 			var that = this,
     			cardNumberValue = $('#cardNumberField').val(),
     			newCard = that._generateRandomCard(cardNumberValue),
@@ -49,7 +54,7 @@
 			
 			cardsViewModel.cardNumbers()[cardNumberValue] = positionAdded;
                 
-			app.navigate("views/cardsView.html");	
+			app.navigate("#home");	
 		},
 
 		cardIdChanged: function(e) {

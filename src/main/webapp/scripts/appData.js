@@ -29,7 +29,7 @@ var AppData = function() {
 	];
     
 	_announcements = [
-		{ title: "Spider Man 2", description: "Enjoy your favorite holiday drinks, like Pumpkin Spice Lattes.", url: "images/spiderman2.png" },
+		{ title: "Spider Man 2", url: "images/spiderman2.png", description: "Peter Parker is beset with troubles in his failing personal life as he battles a brilliant scientist named Doctor Otto Octavius."},
 		{ title: "Robocop 2014" , url: "images/robocop.png", description: "In 2028 Detroit, when Alex Murphy - a loving husband, father and good cop - is critically injured in the line of duty, the multinational conglomerate OmniCorp sees their chance for a part-man, part-robot police officer."},
 		{ title: "Divergent", url: "images/divergent.png", description: "In a world divided by factions based on virtues, Tris learns she's Divergent and won't fit in. When she discovers a plot to destroy Divergents, Tris and the mysterious Four must find out what makes Divergents dangerous before it's too late."},
 		{ title: "Harry Potter", url: "images/harrypotter.png", description: "Harry Potter is a series of seven epic fantasy novels written by the British author J. K. Rowling. The series, named after the titular character, chronicles the adventures of a young wizard, Harry"},
