@@ -41,20 +41,23 @@
 		},
 		
 		Register: function() {
+			creatTable();
+			//insert();
 			username = $('#username').val();
 			password = $('#password').val();
 			fullname = $('#fullname').val();
 			mobileno = $('#mobileno').val();
 			username = $('#username').val();
 			alert(username);
+			/**
 			var that = this,
     			cardNumberValue = $('#cardNumberField').val(),
     			newCard = that._generateRandomCard(cardNumberValue),
                 positionAdded = cardsViewModel.cards.push(newCard) - 1;
 			
 			cardsViewModel.cardNumbers()[cardNumberValue] = positionAdded;
-                
-			app.navigate("#home");	
+               */
+			///app.navigate("#home");	
 		},
 
 		cardIdChanged: function(e) {
@@ -200,13 +203,13 @@
 	RewardsViewModel = CardsViewModelBase.extend({
 		_rewardsForCard : {
 			gold : [
-				{reward: "Free coffee every day"},
-				{reward: "Free refill"},
-				{reward: "Free cookies with every drink"}
+				{reward: "Movie Available in KLCC Cinema"},
+				{reward: "Movie Available at Sung Jaya Cinema"},
+				{reward: "Movie Available at FTMS Cinema"}
 			],
 			silver : [
-				{reward: "Free refill"},
-				{reward: "Free cookies with every drink"}	
+				{reward: "Movie Available in KLCC Cinema"},
+				{reward: "Movie Available at FTMS Cinema"}	
 			]
 		},
 		cardStatus: "",
@@ -254,9 +257,14 @@
 			var that = this;
 			var i;
 			var cards = [];
+			var cards2 = [];
 
 			if (window.localStorage.getItem("cards") !== null) {
 				cards = JSON.parse(window.localStorage.getItem("cards"));
+			}
+			
+			if (window.localStorage.getItem("cards2") !== null) {
+				cards2 = JSON.parse(window.localStorage.getItem("cards2"));
 			}
 
 			for (i = 0; i < cards.length; i+=1) {
@@ -264,6 +272,7 @@
 			}
         
 			that.set("cards", cards);
+			that.set("cards2", cards2);
 			that.cards.bind("change", that.writeIntoLocalStorage);
 		},
 

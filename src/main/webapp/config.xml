@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <widget xmlns = "http://www.w3.org/ns/widgets"
     xmlns:gap = "http://phonegap.com/ns/1.0"
-    id        = "com.phonegap.example"
+    id        = "com.toyin.ticket"
     version   = "1.0.0">
 
 <name>ToyinTicket</name>
@@ -9,7 +9,7 @@
 <description>FILM TICKET BOOKING SYSTEM FOR MOBILE DEVICE SOFTWARE</description>
 
 <author href="https://example.com" email="you@example.com">
-Muniru Toyin
+Muniruddeen Toyin
 </author>
 
 </widget>

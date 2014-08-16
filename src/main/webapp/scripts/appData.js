@@ -1,6 +1,7 @@
 var AppData = function() {
 	var _endpoints,
     	_initialCards,
+    	_initialCards2,
     	_announcements,
         _private;
 
@@ -14,7 +15,7 @@ var AppData = function() {
 			"cardNumber":"461253932",
 			"amount":20,
 			"bonusPoints":60,
-			"expireDate":"2013/12/06"
+			"expireDate":"2014/12/06"
 		},{
 			"cardNumber":"723128745",
 			"amount":76,
@@ -25,8 +26,32 @@ var AppData = function() {
 			"amount":104,
 			"bonusPoints":56,
 			"expireDate":"2014/11/24"
+		},{
+			"cardNumber":"912472185",
+			"amount":104,
+			"bonusPoints":56,
+			"expireDate":"2014/11/24"
 		}
 	];
+	
+	_initialCards2 = [
+	         		{
+	         			"cardNumber":"999999999",
+	         			"amount":20,
+	         			"bonusPoints":60,
+	         			"expireDate":"2013/12/06"
+	         		},{
+	         			"cardNumber":"723128745",
+	         			"amount":76,
+	         			"bonusPoints":22,
+	         			"expireDate":"2014/10/16"
+	         		},{
+	         			"cardNumber":"912472185",
+	         			"amount":104,
+	         			"bonusPoints":56,
+	         			"expireDate":"2014/11/24"
+	         		}
+	         	];	
     
 	_announcements = [
 		{ title: "Spider Man 2", url: "images/spiderman2.png", description: "Peter Parker is beset with troubles in his failing personal life as he battles a brilliant scientist named Doctor Otto Octavius."},
@@ -134,6 +159,10 @@ var AppData = function() {
         
 		getInitialCards: function() {
 			return JSON.stringify(_initialCards);
+		},
+		
+		getInitialCards2: function() {
+			return JSON.stringify(_initialCards2);
 		},
         
 		getAnnouncements: function() {

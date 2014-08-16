@@ -21,6 +21,7 @@ function creatTable() {
 }
 
 function insert(){
+	alert("insert call");
 	db.transaction(function(transaction) {
     var executeQuery = "INSERT INTO user(id, username, password, fullname, mobileno, amount)  VALUES(?,?,?,?,?,?)";
     //Helper.log(executeQuery);              

@@ -86,7 +86,7 @@
 				_private.addMarkers(locations, mapObj);
 			})
 			.fail(function() {
-				alert("Error loading locations.");
+				///alert("Error loading locations.");
 			});
 		},
         
@@ -154,6 +154,10 @@
             
             if (window.localStorage.getItem("cards") === null) {
 				localStorage.setItem("cards", _appData.getInitialCards());
+			}
+            
+            if (window.localStorage.getItem("cards2") === null) {
+				localStorage.setItem("cards2", _appData.getInitialCards2());
 			}
             
             cardsViewModel.loadFromLocalStorage();
