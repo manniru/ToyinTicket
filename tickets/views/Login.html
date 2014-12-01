@@ -1,0 +1,28 @@
+<div data-role="view" id="addCardView" data-title="User Login" data-show="RegisterShow" data-model="addCardViewModel">
+	<div data-role="header">
+		<div data-role="navbar">
+			<a href="#cardsView" data-role="button" data-align="left">Cancel</a>
+            <span data-role="view-title"></span>
+            <button data-role="button" data-align="right" id="registerbtn" data-bind="events: { click: Login }">Login</button>
+		</div>
+	</div>
+    <div data-role="content">
+        <div class="addCardLogo clear">
+            <div class="cardPicture">
+            </div>
+            <span class="addCardLogoText">User Login</span>
+        </div>
+        <ul class="addNewCardWrapper" data-role="listview" data-style="inset">
+			<li>
+				<label>Username:</label>
+				<input type="text" id="username"/>
+			</li>
+			<li>
+				<label for="cardNumberField">Password:</label>
+				<input type="text" id="password"/>
+			</li>
+			
+		</ul>
+		<div id="addNewCardErrorLog"></div>
+    </div>
+</div>
